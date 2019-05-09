@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<section id="unicode">
+  <ul id="unichar">
+    <li><h2>&ldquo; {{ character.display }} &rdquo;</h2></li>
+    <li><h3>{{ character.name }}</h3></li>
+    <li>Code Point: <span class="codepoint">{{ character.codepoint }}</span></li>
+    <li>HTML: <span class="htmlcode">{{ character.html }}</span></li>
+    <li>Décimale: <span class="decimal">{{ character.decimal }}</span></li>
+    <li>Catégorie: <span class="category">{{ character.category }}</span></li>
+  </ul>
+  <footer>
+    <ul>
+      {% if character.decimal != 1 %}
+        <li>
+          <a href="{{character.decimal-1}}">&#9665; Caractère précédent</a>
+        </li>
+      {% endif %}
+      {% if character.decimal != 230000 %}
+        <li>
+          <a href="{{character.decimal+1}}">Caractère suivant &#9655;</a>
+        </li>
+      {% endif %}
+    </ul>
+  </footer>
+</section>
+
+{% endblock %}

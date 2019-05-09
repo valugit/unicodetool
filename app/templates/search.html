@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+  <section>
+    <p class="infos info-search">
+      UnicodeTool vous permet de chercher directement un caractère et de récupérer toutes les informations de ce dernier.
+    </p>
+    <p class="infos info-search">
+      Vous pouvez chercher votre caractère en utilisant la barre de recherche ci-dessous à l'aide de son point de code en décimal (ex. "10003"), 
+      de son point de code à la notation "U+HEX" (ex. "U+2713"), du caractère lui même (ex. "&check;"), ou de son nom (ex. "Check Mark").
+    </p>
+    
+    <form method="GET">
+      <input type="text" name="search" placeholder="'cross' or '&hearts;' or 'U+1f52b' or '24537'">
+    </form>
+  </section>
+
+  {% if results %}
+    <section>
+      <h3>Nous avons trouvé {{itemsfound}} résultats suite à votre recherche :</h3>
+      <ul>
+        {% for result in results %}
+          <li>
+            <a href="/unicode/{{result.decimal}}">
+              {{result.display}} - {{result.name}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endblock %}

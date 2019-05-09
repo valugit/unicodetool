@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <h2>Bienvenue sur UnicodeTool !</h2>
+  <section>
+    <h3>Unicode ?</h3>
+    <p class="infos">
+      Unicode est un standard informatique qui permet des échanges de textes dans différentes langues, à un niveau mondial. 
+      Il est développé par le Consortium Unicode, qui vise au codage de texte écrit en donnant à tout caractère de n'importe quel système d'écriture un nom et un identifiant numérique, 
+      et ce de manière unifiée, quels que soient la plate-forme informatique ou le logiciel utilisés.
+    </p>
+  </section>
+
+  <section>
+    <h3>À quoi sert UnicodeTool ?</h3>
+    <p class="infos">
+      UnicodeTool vous permet de récupérer toutes les informations sur le caractère unicode que vous souhaitez. Vous pouvez les chercher <a href="/search">ici</a>, 
+      ou dans la barre de recherche à disposition en haut de page.
+    </p>
+  </section>
+
+  <section>
+    <h3>Quelques exemples de caractères :</h3>
+    <ul>
+      <li><a href="/unicode/10003">&checkmark; - Check</a></li>
+      <li><a href="/unicode/10007">&cross; - Croix</a></li>
+      <li><a href="/unicode/9824">&spades; - Pique</a></li>
+      <li><a href="/unicode/9830">&diams; - Carreau</a></li>
+      <li><a href="/unicode/9829">&hearts; - C&oelig;ur</a></li>
+      <li><a href="/unicode/9827">&clubs; - Trèfle</a></li>
+    </ul>
+  </section>
+
+{% endblock %}

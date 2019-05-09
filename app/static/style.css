@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  background: none;
+  margin: 0;
+  border: none;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", "Arial Unicode MS", sans-serif; }
+
+body {
+  min-height: 100vh;
+  background-color: #282c34; }
+
+h1 {
+  color: #3bf498; }
+
+a {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  justify-content: center; }
+  a::before {
+    content: "";
+    transition: 0.2s ease;
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background: #3bf498; }
+  a:hover::before {
+    width: 100%; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  height: 8vh; }
+  header form {
+    width: 30%; }
+    header form input {
+      width: 100%;
+      border: 1px solid #fff;
+      padding: 10px; }
+      header form input:focus {
+        border: 1px solid #3bf498; }
+  header ul {
+    display: flex;
+    width: 20%; }
+    header ul li {
+      margin-right: 20px; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  min-height: 84vh; }
+  main section {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    main section h3 {
+      align-self: flex-start; }
+    main section form {
+      align-self: center;
+      width: 50%;
+      margin: 10px; }
+      main section form input {
+        width: 100%;
+        border: 1px solid #fff;
+        padding: 20px; }
+        main section form input:focus {
+          border: 1px solid #3bf498; }
+    main section .infos {
+      margin: 15px; }
+    main section .info-search {
+      align-self: center;
+      width: 50%; }
+    main section ul {
+      margin: 20px; }
+      main section ul li {
+        margin-bottom: 10px; }
+    main section #unichar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main section #unichar h3 {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5px;
+        margin-bottom: 5px; }
+      main section #unichar .codepoint {
+        color: #a20a44; }
+      main section #unichar .htmlcode {
+        color: #9acd32; }
+      main section #unichar .decimal {
+        color: #80b0ff; }
+      main section #unichar .category {
+        color: #ff9000; }
+  main footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+body > footer {
+  height: 8vh;
+  background-color: #3bf498;
+  display: flex;
+  align-items: center; }
+  body > footer span {
+    margin-left: 5%; }
+
+/*# sourceMappingURL=style.css.map */

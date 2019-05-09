@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>UnicodeTool - {{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <a href="/">
+        <h1>UnicodeTool</h1>
+      </a>
+      {% if not search %}
+        <form method="GET" action="/search">
+          <input type="text" name="search" placeholder="'cross' or '&check;' or 'U+1f52b' or '24537'">
+        </form>
+      {% endif %}
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/search">Recherche</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <span>
+        UnicodeTool by Grégoire "Valu" Masse
+          © 2019 All rights reserved
+      </span>
+    </footer>
+  </body>
+
+</html>
