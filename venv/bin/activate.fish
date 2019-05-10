@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/gregoiremasse/Documents/20182019/projects/python3/gregoire-masse_flask1/venv"
+set -gx VIRTUAL_ENV "/Users/gregoiremasse/.Trash/gregoire-masse_flask1/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
