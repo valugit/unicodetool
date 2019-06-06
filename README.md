@@ -1,3 +1,3 @@
 # UnicodeTool
 
-Un outil de recherche de caractère unicode.
+Un outil de recherche de caractères unicodes.
