@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 $bleen: #3bf498;
+$orange: #ff8000;
 $anthracite: #282c34;
+$black: #1a1919;
+$crimson: #a20a44;
 
 * {
   background: none;
@@ -11,10 +14,10 @@ $anthracite: #282c34;
   color: #fff;
   text-decoration: none;
   list-style: none;
-  font-family: "Roboto", "Segoe UI Symbol", "Arial Unicode MS", sans-serif;
+  font-family: "Roboto", "Sogoe UI Symbol", "Arial Unicode MS", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background-color: $anthracite;
+  background-color: $black;
 }
