@@ -32,6 +32,8 @@ a {
     background: #3bf498; }
   a:hover::before {
     width: 100%; }
+  a.active {
+    color: #3bf498; }
 
 header {
   display: flex;
@@ -44,7 +46,8 @@ header {
     header form input {
       width: 100%;
       border: 1px solid #fff;
-      padding: 10px; }
+      padding: 10px;
+      font-size: 20px; }
       header form input:focus {
         border: 1px solid #3bf498; }
   header ul {
@@ -52,6 +55,8 @@ header {
     width: 20%; }
     header ul li {
       margin-right: 20px; }
+      header ul li a {
+        font-size: 20px; }
 
 main {
   display: flex;
@@ -76,7 +81,8 @@ main {
       main section form input {
         width: 100%;
         border: 1px solid #fff;
-        padding: 20px; }
+        padding: 20px;
+        font-size: 20px; }
         main section form input:focus {
           border: 1px solid #3bf498; }
     main section .infos {
